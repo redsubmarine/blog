@@ -20,7 +20,7 @@ const config: Config = {
     organizationName: 'redsubmarine', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
 
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
 
     // Even if you don't use internationalization, you can use this field to set
@@ -41,7 +41,10 @@ const config: Config = {
                     showReadingTime: true,
                     feedOptions: {
                         type: ['rss', 'atom'],
-                        xslt: true,
+                        title: 'redsubmarine Blog',
+                        description: '개발 경험과 지식을 공유하는 블로그',
+                        copyright: `Copyright © ${new Date().getFullYear()} redsubmarine`,
+                        language: 'ko',
                     },
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
