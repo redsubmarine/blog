@@ -1,12 +1,6 @@
 import React from 'react';
-import Root from '@theme/Root';
-import RssLinks from '@site/src/components/RssLinks';
 
-export default function RssHeadLinksWrapper({children}) {
-  return (
-    <Root>
-      <RssLinks />
-      {children}
-    </Root>
-  );
+// 단순히 자식 컴포넌트만 반환하도록 수정
+export default function Root({children}) {
+  return <>{children}</>;
 }

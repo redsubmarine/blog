@@ -1,5 +1,5 @@
 import React from 'react';
-import { Head } from '@docusaurus/Head';
+import {Head} from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -7,7 +7,6 @@ export default function RssLinks() {
   const {siteConfig} = useDocusaurusContext();
   const {
     title,
-    url,
   } = siteConfig;
   
   const rssUrl = useBaseUrl('/rss.xml');
