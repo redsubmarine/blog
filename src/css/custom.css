@@ -6,25 +6,79 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: #1d68e1;
+  --ifm-color-primary-darker: #1b62d4;
+  --ifm-color-primary-darkest: #1751af;
+  --ifm-color-primary-light: #4e89e8;
+  --ifm-color-primary-lighter: #5a91ea;
+  --ifm-color-primary-lightest: #80aaef;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4e89e8;
+  --ifm-color-primary-dark: #2f76e5;
+  --ifm-color-primary-darker: #226ce3;
+  --ifm-color-primary-darkest: #1559c2;
+  --ifm-color-primary-light: #6d9ceb;
+  --ifm-color-primary-lighter: #7ba6ed;
+  --ifm-color-primary-lightest: #a8c4f3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 블로그 포스트 스타일 커스터마이징 */
+.blog-post {
+  margin-bottom: 4rem;
+}
+
+.blog-post-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+/* 블로그 태그 스타일 */
+.blog-tag {
+  background-color: var(--ifm-color-primary-lightest);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.blog-tag:hover {
+  background-color: var(--ifm-color-primary-lighter);
+  text-decoration: none;
+}
+
+/* 코드 블록 스타일 개선 */
+pre {
+  border-radius: 8px;
+}
+
+/* 한글 폰트 최적화 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+}
+
+/* 목차(Table of Contents) 스타일 */
+.table-of-contents {
+  font-size: 0.9rem;
+}
+
+.table-of-contents ul {
+  padding-left: 1rem;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .blog-post-title {
+    font-size: 2rem;
+  }
 }

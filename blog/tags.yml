@@ -1,19 +1,39 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+blog:
+  label: 블로그
+  description: 블로그 관련 포스트
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+introduction:
+  label: 소개
+  description: 소개 및 안내 글
 
 docusaurus:
   label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+  description: Docusaurus 관련 내용
+  
+tutorial:
+  label: 튜토리얼
+  description: 단계별 튜토리얼
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+github-pages:
+  label: GitHub Pages
+  description: GitHub Pages 배포 관련
+  
+swift:
+  label: Swift
+  description: Swift 프로그래밍 언어
+  
+golang:
+  label: Go
+  description: Go 프로그래밍 언어
+  
+rust:
+  label: Rust
+  description: Rust 프로그래밍 언어
+  
+react:
+  label: React
+  description: React 프레임워크
+  
+nodejs:
+  label: Node.js
+  description: Node.js 런타임
