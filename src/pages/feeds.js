@@ -1,14 +1,16 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import RssLinks from '@site/src/components/RssLinks';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home() {
+  const rssUrl = useBaseUrl('/blog/rss.xml');
+  const atomUrl = useBaseUrl('/blog/atom.xml');
+
   return (
     <Layout
       title="RSS 피드"
       description="RSS 및 Atom 피드 설명 페이지">
-      <RssLinks />
       <main className="container margin-vert--xl">
         <div className="row">
           <div className="col col--8 col--offset-2">
@@ -18,10 +20,10 @@ export default function Home() {
             </p>
             <ul>
               <li>
-                <Link to="/rss.xml">RSS 피드</Link> - 대부분의 RSS 리더에서 사용 가능
+                <Link to={rssUrl}>RSS 피드</Link> - 대부분의 RSS 리더에서 사용 가능
               </li>
               <li>
-                <Link to="/atom.xml">Atom 피드</Link> - 표준 호환성이 더 좋은 대안
+                <Link to={atomUrl}>Atom 피드</Link> - 표준 호환성이 더 좋은 대안
               </li>
             </ul>
             <h2>RSS 리더 추천</h2>

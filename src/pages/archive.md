@@ -1,5 +1,5 @@
 ---
-slug: archive
+slug: archives
 title: 아카이브
 description: 모든 블로그 포스트 아카이브
 hide_table_of_contents: true
