@@ -11,7 +11,6 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    # GitHub Pages에 대한 권한 추가
     permissions:
       contents: write
     steps:
@@ -31,8 +30,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
-          # GITHUB_TOKEN으로 변경 - 별도의 시크릿 설정 없이 기본 토큰 사용
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          user-name: github-actions[bot]
-          user-email: 41898282+github-actions[bot]@users.noreply.github.com
+          clean: true # 이전 파일 정리
+          clean-exclude: CNAME # CNAME 파일은 유지
