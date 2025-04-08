@@ -1,11 +1,37 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
 /* 아카이브 페이지 스타일 */
-.archive-list {
+.archiveList {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem 0;
 }
 
-.archive-item {
+.archiveItem {
   margin: 0.8rem 0;
   display: flex;
   justify-content: space-between;
@@ -14,7 +40,7 @@
   padding-bottom: 0.8rem;
 }
 
-.archive-date {
+.archiveDate {
   color: var(--ifm-color-emphasis-600);
   font-size: 0.9rem;
   margin-left: 1rem;
@@ -22,12 +48,12 @@
 
 /* 태블릿과 모바일에서의 반응형 디자인 */
 @media (max-width: 768px) {
-  .archive-item {
+  .archiveItem {
     flex-direction: column;
     align-items: flex-start;
   }
   
-  .archive-date {
+  .archiveDate {
     margin-left: 0;
     margin-top: 0.2rem;
   }

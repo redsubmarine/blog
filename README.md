@@ -1,41 +1,16 @@
-# Website
+# 개발자의 블로그
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+이 블로그는 소프트웨어 개발, 프로그래밍 언어, 기술 트렌드에 대한 내용을 다룹니다.
 
-### Installation
+## 메인 주제
 
-```
-$ yarn
-```
+- Go, Swift, React 등 프로그래밍 언어와 프레임워크
+- 개발자 경험과 생산성 향상 도구
+- 소프트웨어 아키텍처와 설계 패턴
+- 기술 트렌드와 새로운 도구
 
-### Local Development
+## 기술 스택
 
-```
-$ yarn start
-```
+이 블로그는 Docusaurus로 만들어졌으며, GitHub Pages에서 호스팅됩니다.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+블로그 방문하기: [blog.wonseok.kr](https://blog.wonseok.kr)

@@ -75,7 +75,7 @@ const config: Config = {
             },
             items: [
                 {to: '/tags', label: '태그', position: 'left'},
-                {to: '/archives', label: '아카이브', position: 'left'},
+                {to: '/archive', label: '아카이브', position: 'left'},
                 {
                     href: 'https://github.com/redsubmarine',
                     label: 'GitHub',
@@ -99,7 +99,7 @@ const config: Config = {
                         },
                         {
                             label: '아카이브',
-                            to: '/archives',
+                            to: '/archive',
                         },
                     ],
                 },
@@ -121,11 +121,11 @@ const config: Config = {
                     items: [
                         {
                             label: 'RSS',
-                            to: '/blog/rss.xml',
+                            to: '/rss.xml',
                         },
                         {
                             label: 'Atom',
-                            to: '/blog/atom.xml',
+                            to: '/atom.xml',
                         },
                     ],
                 },
