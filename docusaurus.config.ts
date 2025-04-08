@@ -112,7 +112,7 @@ const config: Config = {
                         },
                         {
                             label: 'LinkedIn',
-                            href: 'https://www.linkedin.com/in/redsubmarine',
+                            href: 'https://www.linkedin.com/in/redsub',
                         },
                     ],
                 },
